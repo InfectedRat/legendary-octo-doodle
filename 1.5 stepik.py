@@ -16,4 +16,8 @@
 # zp = yp + 7
 # print(x*xp + y*yp + z*zp)
 
-print(*[3 * x + 5 * y + 12 * z for x, y, z in [map(int, input().split())]])
+# print(*[3 * x + 5 * y + 12 * z for x, y, z in [map(int, input().split())]])
+
+n, a, b = map(int, input().split())
+result = ((a * b) * n) * 2
+print(result)
