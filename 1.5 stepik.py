@@ -22,4 +22,24 @@
 # result = ((a * b) * n) * 2
 # print(result)
 
-print(*[(a + b + c + d) / 4 for a, b, c, d in [map(int, input().split())]])
+# print(*[(a + b + c + d) / 4 for a, b, c, d in [map(int, input().split())]])
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# x = int(input())
+# y = int(input())
+# z = int(input())
+
+# a, b, c, x, y, z = [int(input()) for _ in range(6)]
+# print(abs((a * 3600 + b * 60 + c) - (x * 3600 + y * 60 + z)))
+
+# a, b = map(int, input().split())
+# c = a + b
+# a = c - 1 - a
+# b = c - 1 - b
+# print(a, b)
+
+a, b = [int(input()) for _ in range(2)]
+c = abs(a) + abs(b)
+print(c)
