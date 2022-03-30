@@ -18,6 +18,8 @@
 
 # print(*[3 * x + 5 * y + 12 * z for x, y, z in [map(int, input().split())]])
 
-n, a, b = map(int, input().split())
-result = ((a * b) * n) * 2
-print(result)
+# n, a, b = map(int, input().split())
+# result = ((a * b) * n) * 2
+# print(result)
+
+print(*[(a + b + c + d) / 4 for a, b, c, d in [map(int, input().split())]])
