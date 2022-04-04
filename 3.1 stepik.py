@@ -71,3 +71,51 @@ if int(a[0])+int(a[1])+int(a[2])==int(a[3])+int(a[4])+int(a[5]):
     print('YES')
 else:
     print('NO')
+
+
+array = []
+for i in range(8):
+    temp = []
+    for j in range(8):
+        if j % 2 == 0:
+            temp.append('белая')
+        else:
+            temp.append('чёрная')
+    if i % 2 != 0:
+        temp.reverse()
+    array.append(temp)
+for i in array:
+    print(i)
+
+print(array)
+
+a, b = [input() for _ in range(2)]
+if (int(a[1])+int(b[1]))%2 == 0:
+    print('NO')
+else:
+    print('YES')
+
+a, b = [input() for _ in range(2)]
+chss_string = '!abcdefgh'
+ch1 = chss_string.find(a[0])
+ch2 = chss_string.find(b[0])
+if (int(a[1])+ch1)%2 == 0 and (int(b[1])+ch2)%2 == 0 or (int(a[1])+ch1)%2 == 1 and (int(b[1])+ch2)%2 == 1:
+    print('YES')
+else:
+    print('NO')
+# print(ch1, ch2)
+
+a = int(input())
+ml = [x if x % 2 == 0 else (x * -1) for x in range(1, a + 1)]
+# a = sum(ml)
+print(sum(ml))
+# print(a)
+
+n = int(input())
+if n % 2 == 0:
+    s = round(n / 2)
+    print(s)
+else:
+    s = -round((n + 1) / 2)
+    print(s)
+print(s)
