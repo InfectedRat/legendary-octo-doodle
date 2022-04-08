@@ -34,9 +34,20 @@
 #     numbers.remove(4)
 # print(*numbers)
 
-s = input()
-print(s)
-while len(s)>0:
-    s = s[1:-1]
-    print(s)
+# s = input()
+# print(s)
+# while len(s)>0:
+#     s = s[1:-1]
+#     print(s)
+#
 
+# import math
+# print(math.sqrt(15))
+
+k = int(input())
+n = 1
+g = 0
+while n <= k:
+    print(n)
+    g = g+1
+    n = (g + 1) ** 2
