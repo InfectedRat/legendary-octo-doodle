@@ -9,3 +9,10 @@ while r != 0:
         b=r
 
 print(a, b)
+
+if a>b:
+    b=a
+else:
+    b
+
+print(b)
