@@ -9,10 +9,20 @@
 #     number = number // 10
 # print(s + m)
 
+# num = int(input())
+# while num > 0:
+#     last_num = num%10
+#     print(last_num)
+#     num = num//10
+
+def summ(num):
+    summ = 0
+    while num > 0:
+        last_num = num % 10
+        summ = summ + last_num
+        num = num // 10
+    return summ
+
+
 num = int(input())
-while num > 0:
-    last_num = num%10
-    print(last_num)
-    num = num//10
-
-
+print(summ(num))
