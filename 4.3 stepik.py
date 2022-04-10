@@ -15,14 +15,36 @@
 #     print(last_num)
 #     num = num//10
 
-def summ(num):
-    summ = 0
+# def summ(num):
+#     summ = 1
+#     while num > 0:
+#         last_num = num % 10
+#         summ = summ * last_num
+#         num = num // 10
+#     return summ
+#
+#
+# num = int(input())
+# print(summ(num))
+
+# dl = []
+# while True:
+#     dl.append(int(input()))
+#     if 0 in dl:
+#         break
+# print(sum(dl))
+def minax(num):
+    minn = 9
+    maxx = 0
     while num > 0:
         last_num = num % 10
-        summ = summ + last_num
+        if last_num > maxx:
+            maxx = last_num
+        if last_num < minn:
+            minn = last_num
         num = num // 10
-    return summ
+    return minn, maxx
 
 
 num = int(input())
-print(summ(num))
+print(*minax(num), sep='\n')
