@@ -33,18 +33,37 @@
 #     if 0 in dl:
 #         break
 # print(sum(dl))
-def minax(num):
-    minn = 9
-    maxx = 0
-    while num > 0:
-        last_num = num % 10
-        if last_num > maxx:
-            maxx = last_num
-        if last_num < minn:
-            minn = last_num
-        num = num // 10
-    return minn, maxx
 
+# def minax(num):
+#     minn = 9
+#     maxx = 0
+#     while num > 0:
+#         last_num = num % 10
+#         if last_num > maxx:
+#             maxx = last_num
+#         if last_num < minn:
+#             minn = last_num
+#         num = num // 10
+#     return minn, maxx
+#
+#
+# num = int(input())
+# print(*minax(num), sep='\n')
 
-num = int(input())
-print(*minax(num), sep='\n')
+# passw = input()
+
+passw='qwerty'
+while 5<=len(passw)<=9:
+    passw = input()
+    if 5<=len(passw)<=9:
+        val_pass = passw
+
+print(val_pass)
+
+l=list()
+n = input()
+while 5 <= len(n) <= 9:
+    l.append(n)
+    n = input()
+
+print(l[-1])
