@@ -17,11 +17,23 @@
 
 # print([i if not i % 2 else '*' for a in range(51) for i in range(a) if a > 22])
 
-def bartphrase(phrase, n):
-    for i in range(n):
-        print(phrase)
+# def bartphrase(phrase, n):
+#     for i in range(n):
+#         print(phrase)
+#
+# phrase = input()
+# n = int(input())
+#
+# bartphrase(phrase, n)
 
-phrase = input()
-n = int(input())
+a, b = [int(input()) for _ in range(2)]
 
-bartphrase(phrase, n)
+for i in range(a, b+1):
+    if (i%3==0 and i%5==0):
+        print('FizzBuzz')
+    elif i%5==0:
+        print('Buzz')
+    elif i%3==0:
+        print('Fizz')
+    else:
+        print(i)
