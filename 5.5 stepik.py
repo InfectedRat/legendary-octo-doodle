@@ -14,13 +14,45 @@
 #     print(i, summ, alls)
 #
 
+# def loopss(n):
+#     for i in range(1, n+1):
+#         for j in range(1,i+1):
+#             print(j, end=' ')
+#         print()
+#
+# n = int(input())
+# loopss(n)
 
+# n=int(input())
+# count=0
+# for p in range(n+1,2*n):
+#     if p%2==0 and p!=2 or p==1:
+#         continue
+#     d=3
+#     is_plain=True
+#     while d*d<=p:
+#         if p%d==0:
+#             is_plain=False
+#             break
+#         d+=2
+#     if is_plain:
+#         count+=1
+# print(count)
 
-def loopss(n):
-    for i in range(1, n+1):
-        for j in range(1,i+1):
-            print(j, end=' ')
-        print()
+# ls = input().split()
+#
+# for i in ls:
+#     for j in range(1, int(i)+1):
+#         print('*', end='')
+#     print()
 
 n = int(input())
-loopss(n)
+ls = input().split()
+cnt=0
+for j in range(n-1):
+    for i in range(n-1):
+        if ls[i]>ls[i+1]:
+            ls[i],ls[i+1]=ls[i+1],ls[i]
+            cnt+=1
+print(*ls)
+print(cnt)
