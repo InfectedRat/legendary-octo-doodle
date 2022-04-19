@@ -46,13 +46,26 @@
 #         print('*', end='')
 #     print()
 
-n = int(input())
-ls = input().split()
-cnt=0
-for j in range(n-1):
-    for i in range(n-1):
-        if ls[i]>ls[i+1]:
-            ls[i],ls[i+1]=ls[i+1],ls[i]
-            cnt+=1
-print(*ls)
-print(cnt)
+# n = int(input())
+# ls = input().split()
+# cnt=0
+# for j in range(n-1):
+#     for i in range(n-1-j):
+#         if ls[i]>ls[i+1]:
+#             ls[i],ls[i+1]=ls[i+1],ls[i]
+#             cnt+=1
+# print(*ls)
+# print(cnt)
+
+n = input()
+# ls = [i for i in input()]
+ls = list(map(int, input().split()))
+# print(ls)
+minnls = []
+
+for i in range(len(ls)):
+    minn = min(ls)
+    minnls.append(minn)
+    ls.remove(minn)
+
+print(*minnls)
