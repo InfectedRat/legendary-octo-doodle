@@ -37,7 +37,7 @@ for i in range(n):
 # for i in range(n):
 #      print(a[i])
 
-for i in range(n):
-    for j in range(n):
+for i in range(n-1, -1, -1):
+    for j in range(n-1, -1, -1):
         print(a[j][i], end=' ')
     print()
