@@ -25,7 +25,7 @@
 # for i in range(n):
 #     print(a[i])
 
-n = int(input())
+n, m = map(int, input().split())
 a=[]
 
 # for i in range(n):
@@ -37,7 +37,7 @@ for i in range(n):
 # for i in range(n):
 #      print(a[i])
 
-for i in range(n-1, -1, -1):
-    for j in range(n-1, -1, -1):
-        print(a[j][i], end=' ')
+for i in range(n):
+    for j in range(m-1, -1, -1):
+        print(a[i][j], end=' ')
     print()
