@@ -96,7 +96,6 @@
 #
 # print('Yes' if summ1==summ2 else 'No')
 
-
 n, m = map(int, input().split())
 a = []
 c = []
@@ -110,3 +109,4 @@ for i in range(n):
 print(max(c))
 ind = c.index(max(c))
 print(ind)
+
