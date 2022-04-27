@@ -27,12 +27,20 @@
 # else:
 #     print(c[::-1])
 
-st = 'Create a list of the first letters of every word in this string'
-lst1 = st.split()
-lst2 = [lst1[i][0] for i in range(len(lst1))]
-print(lst2)
+# st = 'Create a list of the first letters of every word in this string'
+# lst1 = st.split()
+# lst2 = [lst1[i][0] for i in range(len(lst1))]
+# print(lst2)
 
 # st = 'Create a list of the first letters of every word in this string'
 # st = [i[0] for i in st.split()]
 # for i in st:
 #     print(i, end='')
+
+from string import ascii_uppercase
+
+n = int(input())
+ls = [i for i in ascii_uppercase]
+print(ls[:n])
+
+# print(ascii_uppercase) # выведет строку ABCDEFGHIJKLMNOPQRSTUVWXYZ
