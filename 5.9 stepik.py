@@ -38,9 +38,8 @@
 #     print(i, end='')
 
 from string import ascii_uppercase
-
 n = int(input())
-ls = [i for i in ascii_uppercase]
-print(ls[:n])
+ls = [ascii_uppercase[i]*(i+1) for i in range(n)]
+print(ls)
 
 # print(ascii_uppercase) # выведет строку ABCDEFGHIJKLMNOPQRSTUVWXYZ
