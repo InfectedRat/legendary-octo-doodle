@@ -37,9 +37,16 @@
 # for i in st:
 #     print(i, end='')
 
-from string import ascii_uppercase
-n = int(input())
-ls = [ascii_uppercase[i]*(i+1) for i in range(n)]
-print(ls)
+# from string import ascii_uppercase
+# n = int(input())
+# ls = [ascii_uppercase[i]*(i+1) for i in range(n)]
+# print(ls)
 
 # print(ascii_uppercase) # выведет строку ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+phrase = 'Take only the words that start with t in this sentence'
+ls1 = phrase.split()
+ls2 = [ls1[i] for i in range(len(ls1)) if 't' in ls1[i][0].lower()]
+
+print(ls2)
+
