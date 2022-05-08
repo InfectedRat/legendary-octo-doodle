@@ -19,3 +19,11 @@ for i in range(n):
     a.append(list((map(int, input().split()))))
 
 print(a)
+
+# put your python code here
+s = 0
+a = 1
+while a != 0:
+    a = int(input())
+    s += a
+print(s)
