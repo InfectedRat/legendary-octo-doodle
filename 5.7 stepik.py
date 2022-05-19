@@ -19,6 +19,13 @@ for i in range(n):
     a.append(list((map(int, input().split()))))
 
 print(a)
+n, m = map(int, input().split())
+a=[]
+
+for i in range(n):
+    a.append(list((map(int, input().split()))))
+
+print(a)
 
 # put your python code here
 s = 0
