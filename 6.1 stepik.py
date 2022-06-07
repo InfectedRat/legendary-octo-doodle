@@ -44,3 +44,11 @@ for i, j in alphabet.items():
 
 print(alphabet)
 
+
+for i in range(n):
+    alphabet[ascii_lowercase[i]] = i+1
+
+for i, j in alphabet.items():
+    print(i, j)
+
+print(alphabet)
