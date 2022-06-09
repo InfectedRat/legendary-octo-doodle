@@ -6,54 +6,24 @@
 #
 # print(my_dict)
 
-from string import ascii_lowercase
-# print(len(ascii_lowercase))
+# from string import ascii_lowercase
+# # print(len(ascii_lowercase))
+#
+# alphabet = {}
+# n=26
+#
+# for i in range(n):
+#     alphabet[ascii_lowercase[i]] = i+1
+#
+# for i, j in alphabet.items():
+#     print(i, j)
+#
+# print(alphabet)
 
-alphabet = {}
-n=26
+d1 = {'a': 100, 'b': 200, 'c': 333}
+d2 = {'x': 300, 'y': 200, 'z': 777}
 
-for i in range(n):
-    alphabet[ascii_lowercase[i]] = i+1
+rez = d1.copy()
+rez.update(d2)
 
-for i, j in alphabet.items():
-    print(i, j)
-
-print(alphabet)
-
-for i in range(n):
-    alphabet[ascii_lowercase[i]] = i+1
-
-for i, j in alphabet.items():
-    print(i, j)
-
-print(alphabet)
-
-for i in range(n):
-    alphabet[ascii_lowercase[i]] = i+1
-
-for i, j in alphabet.items():
-    print(i, j)
-
-print(alphabet)
-
-for i in range(n):
-    alphabet[ascii_lowercase[i]] = i+1
-
-for i, j in alphabet.items():
-    print(i, j)
-
-print(alphabet)
-
-for i in range(n):
-    alphabet[ascii_lowercase[i]] = i+1
-
-for i, j in alphabet.items():
-    print(i, j)
-
-    for i in range(n):
-        alphabet[ascii_lowercase[i]] = i + 1
-
-    for i, j in alphabet.items():
-        print(i, j)
-
-print(alphabet)
+print(rez)
