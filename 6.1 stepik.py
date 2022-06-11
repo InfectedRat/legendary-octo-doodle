@@ -27,3 +27,5 @@ rez = d1.copy()
 rez.update(d2)
 
 print(rez)
+
+print(rez)
